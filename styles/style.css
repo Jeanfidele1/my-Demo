@@ -24,6 +24,7 @@
                     nav ul {
                         display: flex;
                         align-items: center;
+                        color: white;
                     }
                     
                     .body-container {
@@ -31,8 +32,22 @@
                         background-size: cover;
                         background-repeat: no-repeat;
                         display: flex;
+                        justify-content: space-evenly;
                     }
                     
                     .welcome-text {
-                        color: tan;
+                        width: 30vw;
+                        color: tomato;
+                        margin-top: 80px;
+                    }
+                    
+                    .social-media {
+                        display: flex;
+                        flex-direction: column;
+                        width: 30vw;
+                        margin-left: 50%;
+                    }
+                    
+                    .profile picture img {
+                        width: 30vw;
                     }
