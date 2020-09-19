@@ -63,8 +63,12 @@
                     padding-top: 10%;
                 }
                 
-                .body container {
+                .body-container {
                     display: flex;
-                    justify-content: space-evenly;
-                    padding: 50%;
+                    justify-content: space-between;
+                    background-color: blueviolet;
+                }
+                
+                .list {
+                    height: 10%;
                 }
