@@ -50,8 +50,52 @@ nav ul li a:hover {
     color: rgb(131, 130, 130);
 }
 
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px; 
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical
+}
+
 .nav a {
     color: fff;
     text-decoration: none;
     font-size: 18px;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {  
+    widows: 100%;
+    padding:10px;
+    margin-bottom: auto;
+    
+}
+.body {
+    background-color:moccasin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.form-container {
+background-color: moccasin;
+    padding: 12px;
+    width: 100%;
+
+
+}
+
+
 }
