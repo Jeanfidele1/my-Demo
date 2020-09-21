@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.nav-bar {
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 40%;
+}
+
+nav ul {
+    width: 80%;
+    color: fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(131, 130, 130);
+}
+
+.nav a {
+    color: fff;
+    text-decoration: none;
+    font-size: 18px;
+} 
+.login{  
+    width: 100%;  
+    overflow: hidden;     
+    padding: 12px;    
+    border-radius: 15px ;  
+}
+.form {
+    text-align: center;
+    width: 100%;  
+    overflow: hidden;     
+    padding: 12px;    
+    border-radius: 15px ; 
+}
+    #Uname{  
+        width: 300px;  
+        height: 30px;  
+        box-sizing: border-box; 
+        border-radius: 13px;  
+        padding-left: 5px;  
+    }
+    #Pass{  
+        width: 300px;  
+        height: 30px;  
+        box-sizing: border-box; 
+        border-radius: 14px;  
+        padding-left: 10px; 
+    }
+    #log{  
+        width: 100px;  
+        height: 30px;  
+        border: none;  
+        border-radius: 17px;  
+        padding-left: 7px;  
+        color: black;  
+        background-color: green;
+    }
+
+    h1 { 
+            text-align: center;  
+            color:black;  
+            padding: 15px;
+            height: 200%;
+     }   
+     .all {
+         width: 100%;
+         padding: 12px;
+         background-color: darkgrey;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     label {
+         display: block;
+     }

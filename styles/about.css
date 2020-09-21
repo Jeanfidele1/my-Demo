@@ -57,18 +57,36 @@
                 }
                 
                 .welcome-text H1 {
-                    color: blue;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     padding-top: 10%;
                 }
-                
                 .body-container {
+                    padding: 20px;
                     display: flex;
-                    justify-content: space-between;
-                    background-color: blueviolet;
+                    justify-content: space-around;
+
                 }
-                
-                .list {
-                    height: 10%;
-                }
+        .content {
+           width: 85%;
+           margin-top: 2em;
+        }
+        .content h1 {
+            text-align: center;
+        }
+        .main-container {
+            margin-top: 2em;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .welcome-text {
+            width: 50%;
+        }
+        .list ul li {
+            list-style-type: none;
+            padding-top: 10px;
+            font-weight: bold;
+
+        }
