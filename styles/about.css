@@ -66,6 +66,9 @@
                     padding: 20px;
                     display: flex;
                     justify-content: space-around;
+                    background-color: bisque;
+                    background-repeat: no-repeat;
+                    background-size: cover;
 
                 }
         .content {
