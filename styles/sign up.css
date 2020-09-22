@@ -27,7 +27,7 @@ nav {
 
 nav ul {
     width: 80%;
-    color: fff;
+    color: #ffff;
     text-decoration: none;
     font-size: 18px;
     display: flex;
@@ -55,3 +55,81 @@ nav ul li a:hover {
     text-decoration: none;
     font-size: 18px;
 } 
+
+body{
+    background: bisque;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 20px; */
+}
+.content-container{
+    width: 80%;
+    height: 500px; 
+    display: flex;
+    justify-content: space-between;
+   padding: 30px;
+}
+.signin-btn-wrapper{
+    width: 40%;
+    align-items: center;
+}
+
+.signin-btn-wrapper button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px 20px;
+    border-width: 0px;
+    background-color: green;
+    color: #ffff;
+    font-size: 16px;
+    margin-top: 50%; 
+    margin-left: 25%;
+    
+}
+.signin-btn-wrapper button:hover{
+    background: rgb(24, 105, 24);
+    cursor: pointer;
+}
+.signup-form-wrapper{
+   width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px 20px;
+    background: rgb(189, 189, 189); 
+}
+form{
+    width: 90%;
+ 
+}
+.input-wrapper{
+    width: 100%;
+    margin-top: 1em;
+}
+form label{
+    display: block;
+}
+form input{
+ width: 100%;
+ padding: 13px;
+ border-radius: 20px 20px;
+ border-width: 0px;
+}
+form button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px 20px;
+    border-width: 0px;
+    background-color: green;
+    color: #ffff;
+    font-size: 16px;
+    margin-left: 25%;
+    margin-top: 1.2em;
+ }
+ form button:hover{
+     background: rgb(24, 105, 24);
+     cursor: pointer;
+ }
