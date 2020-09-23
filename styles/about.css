@@ -69,6 +69,7 @@
                     background-color: bisque;
                     background-repeat: no-repeat;
                     background-size: cover;
+                    height: 100vh;
 
                 }
         .content {
@@ -91,5 +92,33 @@
             list-style-type: none;
             padding-top: 10px;
             font-weight: bold;
-
         }
+        @media screen and (max-width:671px) {
+            .main-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .welcome-text {
+                width: 100%;
+                padding-top: 20px;
+            }
+             .main-container .list, 
+             .main-container .welcome-text p {
+                 text-align: center;
+             }   
+             .nav-bar {
+                display: flex;
+                flex-direction: column;
+                height: 22vh;
+            }
+            .nav-bar img {
+                width: 80px;
+                height: 80px;
+                align-self: center;
+            }
+            nav ul {
+                padding-bottom: 10px;
+            }
+                
+            }
