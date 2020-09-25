@@ -38,7 +38,7 @@
     
     nav ul li {
         list-style-type: none;
-        padding-left: 15px;
+        /* padding-left: 15px; */
 
     }
     
@@ -46,6 +46,8 @@
         text-decoration: none;
         display: inline;
         color: white;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     
     nav ul li a:hover {
@@ -100,8 +102,8 @@
     }
     
     .profile-picture {
-        width: 30%;
-        height: 300px;
+        width: 350px;
+        height: 330px;
     }
     
     .profile-picture img {
