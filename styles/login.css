@@ -85,11 +85,11 @@ nav ul li a:hover {
      .form {
          display: flex;
          flex-direction: column;
-         height: 400px;
+         height: 350px;
          justify-content: center;
          border-radius: 15px ; 
          background-color: rgb(189, 189, 189);
-         width: 60%;  
+         width: 40%;  
          padding-left: 50px;
      }
      .form input{
@@ -98,14 +98,15 @@ nav ul li a:hover {
          border-radius: 20px 20px;
          height: 30px;  
         border: none;  
-        border-radius: 17px;  
+        border-radius: 20px;  
         /* padding-left: 7px;   */
         color: black;  
       
      }
       #log{
-         width: 50%;
-         background: rgb(65, 73, 109);
+         width: 40%;
+         background: green;
+         color: white;
          font-size: 16px;
          margin-left: 15%;
          margin-top: 50px;
@@ -113,6 +114,7 @@ nav ul li a:hover {
          padding: 0px;
          height: 40px;
      }
+     #log a{color: white;}
      label {
          display: flex;
          flex-direction: column;

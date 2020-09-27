@@ -59,6 +59,7 @@ nav ul li a:hover {
 
 body{
     background: white;
+    
 }
 .main-container{
     width: 100%;
@@ -69,14 +70,14 @@ body{
 .content-container{
     width: 80%;
     height: 500px; 
-    display: flex;
-    justify-content: space-between;
+    /* align-items: center; */
     padding: 30px;
 }
-.signin-btn-wrapper{
+
+/* .signin-btn-wrapper{
     width: 40%;
-    align-items: center;
-}
+    align-items: center; */
+
 
 .signin-btn-wrapper button{
     width: 50%;
@@ -96,11 +97,13 @@ body{
 }
 .signup-form-wrapper{
    width: 50%;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     padding: 20px;
     border-radius: 20px 20px;
     background: rgb(189, 189, 189); 
+    margin-left: 25%;
+    /* align-items: center; */
 }
 form{
     width: 90%;
@@ -134,3 +137,27 @@ form button{
      background: rgb(24, 105, 24);
      cursor: pointer;
  }
+ @media screen and (max-width:671px) {
+    .nav-bar {
+       display: flex;
+       flex-direction: column;
+       height: 22vh;
+   }
+   .nav-bar img {
+       width: 80px;
+       height: 80px;
+       align-self: center;
+   }
+   nav ul {
+       padding-bottom: 10px;
+   }
+   .main-container{
+       width: 100%;
+       background-color: red;
+       justify-content: center;
+   }
+   form input{
+       width: 100%;
+       padding-left: 50%;
+   }
+}
