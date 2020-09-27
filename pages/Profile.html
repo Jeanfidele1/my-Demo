@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fidele|Profile</title>
+    <link rel="stylesheet" href="../styles/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+    <script src="../script/scripts.js"></script>
+</head>
+
+<body>
+    <div class="main">    
+        <div class="sidebar">
+            <ul>
+                        <li><img src="../asset/image/person.svg"alt="person image"><h6>Admin</h6></li>
+                        <li><img src="../asset/image/dashboard.svg"alt="dashboard"><h6>Dashboard</h6></li>
+                        <li><img src="../asset/image/comment.svg"alt="comment"><h6>Comment</h6></li>
+                        <li><img src="../asset/image/setting.svg"alt="setting"><h6>Setting</h6></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="nav">
+                <ul>
+                    <li><img src="../asset/image/add.svg"alt="add"><h6>Add</h6></li>
+                </ul>
+                <ul>
+                    <li><img src="../asset/image/list.svg"alt="menu"></li>
+                    <li><img src="../asset/image/logout.svg"alt="logout"><h6>Logout</h6></li>
+                </ul>
+            </div>
+            <div class="content">
+            <div class="form">
+                <form action=""class="Username">
+                 <div class="input-wrapper">
+                    <label>User Name:</label>
+                    <input type="text" name="Uname" id="Uname" placeholder="Username"> 
+                </div>    
+                <div class="input-wrapper">
+                     <label for="Firstaname"> First Name</label>
+                     <input type="text" name="firstname" placeholder="First name">
+                </div>
+                 <div class="input-wrapper">
+                    <label for="Last Name">Last Name</label>
+                    <input type="text" name="lastname" placeholder="lastname">
+                 </div>    
+                 <div class="input-wrapper">
+                     <label for="Email">Email</label>
+                     <input type="email" name="email" placeholder="Email">
+                 </div>
+                 <div class="input-wrapper">
+                     <label for="Phone">Phone</label>
+                     <input type="phone" name="phone" placeholder="Phone">
+                 </div>
+            </form>
+                 
+           </div>
+        
+                <div class="profile">
+                    <img src="../asset/image/profilepic.png"alt="profile">
+                    <h3>MUSIRIKARE Jean Fidele</h3>
+                    <input type="file" name="image" id="image-input" accept="image/*" hidden>
+                    <input type="button"  name="Upload" id="Upload" value="Upload image" onclick="getImage()"> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copy">
+            <h4>Copyright&copy;2020 Fidelis</h4>
+        </div>
+    </footer>
+</body>
+</html>

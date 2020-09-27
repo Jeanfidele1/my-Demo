@@ -99,9 +99,19 @@
       }
           .social-media {
               display: flex;
-              flex-direction: row;
-              width: 30%;
+              justify-content: space-between;
+              /* flex-direction: row; */
+              width: 50%;
               margin-top: 100px;
+              cursor: pointer;
+              transform: scale(1.2);
+             
+          }
+          .social-media a img{
+              width: 30px;
+          }
+          .social-media:hover {
+            transform: scale(1.2);
           }
            
        
