@@ -25,8 +25,18 @@
                 <li><img src="../asset/image/add.svg"alt="add"><h6>Add</h6></li>
             </ul>
             <ul>
-                <li><img src="../asset/image/list.svg"alt="menu"></li>
-                <li><img src="../asset/image/logout.svg"alt="logout"><h6>Logout</h6></li>
+                <li> <button onclick="getDropDown(1)" class="dropbtn">
+                   <img src="../asset/image/list.svg" alt="" class="list-icon">
+                </button>
+                    <div class="dropdown">
+                       <div id="myDropdown" class="dropdown-content">
+                          <a href="./Profile.html">Profile</a>
+                          <a href="#">Change password</a>
+                         
+                        </div>
+                      </div>
+                </li>
+                <li onclick="Logout()"><img src="../asset/image/logout.svg"alt="logout"><h6>Logout</h6></li>
             </ul>
         </div>
         <div class="content">
@@ -61,9 +71,9 @@
             </div>
             <div class="profile">
                 <img src="../asset/image/profilepic.png"alt="profile">
-                <h3>MUSIRIKARE Jean Fidele</h3>
+                <h3 id='user-name'>Loading....</h3>
                 <h4>Software Engenier</h4>
-                <h5>musirikarejf@gmai.com</h5>
+                <h5 id='mail'>loading....</h5>
             </div>
         </div>
     </div>
@@ -73,5 +83,10 @@
         <h4>Copyright&copy;2020 Fidelis</h4>
     </div>
 </footer>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+<script src="../script/firebase.js"></script>
+<script src="../script/dashbaord.js"></script>
 </body>
 </html>

@@ -51,4 +51,15 @@ nav ul li a:hover {
 } 
 .content{
     width: 100%;
+    padding: 20px;
+}
+#back {
+    width: 3%;
+}
+.action ul {
+list-style: none;
+padding: 12px;
+}
+.action :hover {
+    
 }

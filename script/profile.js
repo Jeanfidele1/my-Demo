@@ -1,5 +1,21 @@
-function getImage(){
-    document.getElementById('image-input').click();
+firebase.auth().onAuthStateChanged((user)=>{
+    if(!user){
+      return  window.location.href="../index.html";
+    }
+    let userName = document.getElementById('user-name');
+    userName.innerHTML = user.displayName
+    
+    let mail = document.getElementById('mail');
+    mail.innerHTML = user.email 
+    // console.log(user)
+    
+})
+
+function Logout(){
+    firebase.auth().signOut().then(()=>{
+        window.location.href ="../index.html";
+    }
+    )
 }
 
 /* When the user clicks on the button, 
@@ -19,14 +35,5 @@ function myFunction() {
           openDropdown.classList.remove('show');
         }
       }
-    }
-  }
-
-  function getMobileNav() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
     }
   }
