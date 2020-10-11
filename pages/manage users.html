@@ -11,20 +11,27 @@
 </head>
 <body>
   <div class="container">
-    <h2>Manage Topic</h2>
-  <form>
+    <h2>Add Blog</h2>
+    <ul>
+      <li><a href="../pages/Dashboard.html"><img src="../asset/image/back.PNG" alt="back"></a><h6>back</h6></li>
+    </ul>
+  <form id="blog">
     <label for="Title">Title:</label><br>
     <input type="text" id="Title" name="Title"><br>
-    <label for="lname">Author:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Date:</label><br>
-    <input type="date" id="Date" name="Date"><br>
     <label for="subject">Topic area</label><br>
     <textarea id="subject"  name="subject" style="height:300px"></textarea><br>
-    <input type="file" name="image" id="image"><br>
-    <input type="submit" value="Update Article">
-    
+    <input type="file" name="image" id="image" onchange="getImage(event)"><br>
+    <!-- <input type="submit" value="Update Article"> -->
+    <button type="submit">Publish</button>
   </div>
   </form>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js"></script>
+
+  <script src="../script/firebase.js"></script>
+  <script src="../script/dashbaord.js"></script>
+  <script src="../script/blog.js"></script>
 </body>
 </html>

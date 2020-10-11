@@ -12,9 +12,17 @@
     align-items: center;
 }
 
-/* form {
-    /* padding: 0;
-    height: 80%; */
+form {
+    width: 40%;
+    margin: 20px;
+    padding: 50px;
+    box-shadow: 2px 2px 5px 2px gray;
+
+}
+li,img {
+    width: 70%;
+    list-style: none;
+}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -27,7 +35,7 @@ input[type=text], select, textarea {
     resize: vertical
     }
 
-    input[type=submit] {
+    button[type=submit] {
         background-color: rgb(49, 105, 112);
         color: white;
         padding: 12px 20px;
@@ -35,6 +43,6 @@ input[type=text], select, textarea {
          border-radius: 4px;
          cursor: pointer;
     }
-    input[type=submit]:hover {
+    button[type=submit]:hover {
         background-color: #45a049;
     }

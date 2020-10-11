@@ -41,3 +41,33 @@ function getDropDown(value) {
       }
     }
   }
+
+
+  function displayContacts(){
+    let table = document.getElementById('contactTable');
+
+    db.collection("contact").get().then((contacts)=>{
+      contacts.forEach((contact) => {
+        table.innerHTML+=`
+            <tr>
+              <td>${contact.data().fname}</td>
+              <td>${contact.data().sname}</td>
+              <td>${contact.data().email}</td>
+              <td>${contact.data().message}</td>
+              <td><img src="../asset/image/delete-icon.svg" alt=""></td>
+            </tr>
+        `
+      })
+    }).catch(err => {
+      // alert(err)
+    })
+
+  //   db.collection("contact").get().then(function(querySnapshot) {
+  //     querySnapshot.forEach(function(doc) {
+  //         // doc.data() is never undefined for query doc snapshots
+  //         console.log(doc.id, " => ", doc.data());
+  //     });
+  // });
+  
+  }
+  displayContacts();

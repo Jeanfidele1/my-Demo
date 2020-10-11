@@ -13,7 +13,7 @@
 <div class="main">    
     <div class="sidebar">
         <ul>
-                    <li><img src="../asset/image/person.svg"alt="person image"><h6>Admin</h6></li>
+                    <li><a href="./Profile.html"><img src="../asset/image/person.svg"alt="person image"></a><h6>Admin</h6></li>
                     <li><a href="../index.html"><img src="../asset/image/dashboard.svg"alt="dashboard"></a><h6>Dashboard</h6></li>
                     <li><img src="../asset/image/comment.svg"alt="comment"><h6>Comment</h6></li>
                     <li><img src="../asset/image/setting.svg"alt="setting"><h6>Setting</h6></li>
@@ -22,7 +22,7 @@
     <div class="main-content">
         <div class="nav">
             <ul>
-                <li><img src="../asset/image/add.svg"alt="add"><h6>Add</h6></li>
+                <li><a href="../pages/manage users.html"><img src="../asset/image/add.svg"alt="add"></a><h6>Add</h6></li>
             </ul>
             <ul>
                 <li> <button onclick="getDropDown(1)" class="dropbtn">
@@ -31,8 +31,8 @@
                     <div class="dropdown">
                        <div id="myDropdown" class="dropdown-content">
                           <a href="./Profile.html">Profile</a>
-                          <a href="#">Change password</a>
-                         
+                          <a href="./passwordchange.html">Change password</a>
+                          <a href="./read-message.html">Read Message</a>
                         </div>
                       </div>
                 </li>
@@ -49,8 +49,8 @@
                
                 <div class="action">
                     <ul>
-                      <li>View</li>
-                      <li><img src="../asset/image/comm.svg"alt="comm"><h6>Comment</h6></li>
+                      <li><a href="../pages/blog.html">View</a></li>
+                      <li><a href="../pages/Contact.html"><img src="../asset/image/comm.svg"alt="comm"></a><h6>Comment</h6></li>
                       <li><img src="../asset/image/delete.svg"alt="delete"><h6>Delete</h6></li>
                     </ul>
                 </div>
@@ -63,8 +63,8 @@
                     </div>
                     <div class="action">
                         <ul>
-                          <li>View</li>
-                          <li><img src="../asset/image/comm.svg"alt="comm"><h6>Comment</h6></li>
+                          <li><a href="../pages/blog.html">View</a></li>
+                          <li><a href="../pages/Contact.html"><img src="../asset/image/comm.svg"alt="comm"></a><h6>Comment</h6></li>
                           <li><img src="../asset/image/delete.svg"alt="delete"><h6>Delete</h6></li>
                         </ul>
                     </div>
@@ -86,6 +86,8 @@
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js"></script>
+
 <script src="../script/firebase.js"></script>
 <script src="../script/dashbaord.js"></script>
 </body>

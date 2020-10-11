@@ -40,18 +40,19 @@
             <h1>Contact me:</h1>
         </div>
         <div class="form-container">
-        <form class="my form">
+            <p  id="formError"></p>
+        <form class="my form" onsubmit="event.preventDefault()" id="contactForm">   
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="firstname" name="firstname" placeholder="Your name..">
         
             <label for="lname">Second Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your Second name..">
+            <input type="text" id="secondname" name="lastname" placeholder="Your Second name..">
 
             <label for="lname">Email</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+            <input type="text" id="email" name="lastname" placeholder="Your Email..">
             <label for="subject">Message</label>
-    <textarea id="Message" name="Meassage" placeholder="Your Meassage.." style="height:200px"></textarea>
-    <input type="submit" value="Submit">
+            <textarea id="message" name="Meassage" placeholder="Your Meassage.." style="height:200px"></textarea>
+            <input type="submit" value="Submit" onclick="sendContact()">
          </div>
 
     </div>
@@ -60,7 +61,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
     <script src="../script/firebase.js"></script>
-    <script src="../script/app.js"></script>
+    <!-- <script src="../script/app.js"></script> -->
     <script src="../script/scripts.js"></script>
+    <script src="../script/contact.js"></script>
 </body>
 </html>
