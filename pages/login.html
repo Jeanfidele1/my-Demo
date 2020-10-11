@@ -7,12 +7,13 @@
     <title>fidele|Login page</title>
     <link rel="stylesheet" href="../styles/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="container">
         <div class="nav-bar">
-            <img src="../asset/image/LOGO.svg" alt="logo">
+            <img src="../asset/image/LOGO OG.svg" alt="logo">
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
@@ -24,23 +25,43 @@
                 </ul>
             </nav>
         </div>
-        <div class="header">
-            <h1>Login</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About</a>
+            <a href="../pages/Contact.html">Contact</a>
+            <a href="../pages/blog.html">Blog</a>
+            <a href="" class="active">Login</a>
+            <a href="../pages/sign up.html">Sign up</a>
+            <a href="javascript:void(0);" class="icon" onclick="getMobileNav()">
+              <i class="fa fa-bars"></i>
+            </a>
         </div>
-      <div class="all">
-    <div class="form">
-        <form action="" class="login">
-        <label>User Name or Email:  
-        <input type="text" name="Uname" id="Uname" placeholder="Username">  
-         </label>     
-        <label>Password: 
-        <input type="Password" name="Pass" id="Pass" placeholder="Password"> 
-        </label>    
-        <a href="../pages/Dashboard.html"><input type="button" name="log" id="log" value="Log In"></a> 
-        <br><br>    
-        Don't you have account? <a href="../pages/sign up.html">Sign up</a>     
-    </form> 
+    <div class="header">
+        <h1>Login</h1>
+        </div>
+        <div class="all">
+            <div class="error"></div>
+            <div class="form">
+                <form action="" onsubmit="event.preventDefault()"class="login">
+                <label>User Name or Email:  
+                <input type="text" name="Uname" id="Email" placeholder="Username">  
+                </label>     
+                 <label>Password: 
+                <input type="Password" name="Pass" id="Password" placeholder="Password"> 
+                </label>    
+                <button onClick="logInUser()" id="login">Login</button>
+                <br><br>    
+                 Don't you have account? <a href="../pages/sign up.html">Sign up</a>     
+                </form> 
+             </div>
+        </div>
 </div>
 </div>    
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+            <script src="../script/firebase.js"></script>
+            <script src="../script/app.js"></script>
+            <script src="../script/scripts.js"></script>
 </body>    
 </html>     

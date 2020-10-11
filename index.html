@@ -7,12 +7,14 @@
     <title>fidele|Homepage</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="media/index-media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="container">
         <div class="nav-bar">
-            <img src="asset/image/LOGO.svg" alt="logo">
+            <img src="asset/image/LOGO OG.svg" alt="logo">
             <nav>
                 <ul>
                     <!-- <li><a href="index.html">Home</a></li> -->
@@ -24,14 +26,28 @@
                 </ul>
             </nav>
         </div>
+        <!-- --------------START OF MOBILE NAV---------------- -->
+        <div class="topnav" id="myTopnav">
+            <a href="" class="active">Home</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/Contact.html">Contact</a>
+            <a href="pages/blog.html">Blog</a>
+            <a href="pages/Login.html">Login</a>
+            <a href="pages/sign up.html">Sign up</a>
+            <a href="javascript:void(0);" class="icon" onclick="getMobileNav()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- ----------------- END OF MOBILE NAV--------------------- -->
         <div class="body-container">
             <div class="content">
                 <div class="welcome-text">
 
-                    <h3>Hi, I'm</h3>
+                    <h3>Hello, I'm</h3>
                     <BR>
                     <h1>MUSIRIKARE Jean Fidele</h1>
-                    <p>I write code and i am software developer from Andela</p>
+                    <BR>
+                    <p>I write code and I am software developer from Andela</p>
                 </div>
                 <div class="profile-picture">
                     <img src="asset/image/face pic.jpg" alt="my profile-picture">
@@ -45,7 +61,7 @@
         </div>
 
     </div>
-
+  <script src="./script/scripts.js"></script>
 </body>
 
 </html>
