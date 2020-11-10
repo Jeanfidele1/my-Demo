@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fidele|standarduser</title>
+    <link rel="stylesheet" href="../styles/standarduser.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div class="nav">
+          <div class="blog">
+              <ul>
+                  <li><a href="../pages/manage users.html"><img src="../asset/image/add blog.png" alt="add"></a><h6>Create blog</h6></li>
+              </ul>
+          </div>
+          <div class="menu">
+              <ul>
+                  <li>
+                    <button onclick="getDropDown(1)" class="dropbtn">
+                        <img src="../asset/image/list.svg" alt="" class="list-icon">
+                     </button>
+                         <div class="dropdown">
+                            <div id="myDropdown" class="dropdown-content">
+                               <a href="./Profile.html">Profile</a>
+                               <a href="./passwordchange.html">Change password</a>
+                             </div>
+                           </div>
+                  </li>
+                  <li onclick="Logout()"><img src="../asset/image/logout.svg" alt="logout"></li>
+              </ul>
+          </div>
+      </div>
+      <div class="dash">
+          <div class="user">
+          <ul>
+              <li><img src="../asset/image/dashboard.svg" alt="user"><h5>Dashboard</h5></li>
+              <li><img src="../asset/image/comment user.png" alt="comment"><h5>Contact</h5></li>
+              <LI><a href="../pages/blog.html"><img src="../asset/image/Blogger.svg.png" alt="blog"></a><h5>ViewBlogs</h5></LI>
+          </ul>
+           </div>
+           <div class="admin">
+               <img src="../asset/image/personheader.png" alt="admn">
+               <!-- <h3 id='user-name'>Loading....</h3> -->
+               <br>
+               <h3 id='mail'>loading....</h3>
+           </div>
+      </div>
+    <footer>
+        <div class="copy">
+            <h4>Copyright&copy;2020 Fidelis</h4>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-storage.js"></script>
+
+    <script src="../script/firebase.js"></script>
+    <script src="../script/dashbaord.js"></script>
+
+</body>
+</html>

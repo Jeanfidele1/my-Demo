@@ -48,7 +48,7 @@ db.collection('blogpost').doc(postid).get().then(function(doc){
                 <BR>
                 <img src='${imageURL}' id="postImage">
                 <h2>Advantage of being software developer</h2>
-                <p>${data.subject}</p>
+                <p id= "edit-blog">${data.subject}</p>
             </div>
             <div class="action">
                 <ul>

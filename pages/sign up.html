@@ -40,7 +40,7 @@
             <div class="content-container">
                 <div class="error"></div>
                 <div class="signup-form-wrapper">
-                   <form action="" onsubmit="event.preventDefault()">
+                   <form id="registerForm" onsubmit="event.preventDefault(); SignUpUser()">
                        <div class="input-wrapper">
                            <label for="Name">username</label>
                            <input type="text" name="name" placeholder="Your names" id="username">
@@ -58,11 +58,11 @@
 
                     <div class="input-wrapper">
                         <label for="Name">Confirm Password</label>
-                        <input type="password" name="name" placeholder="Re-enter password" id="confirm-password">
+                        <input type="password" name="name" placeholder="Re-enter password" id="confirmpassword">
                     </div>
 
                     <div class="input-wrapper">
-                      <button onClick="SignUpUser()">SignUp</button>
+                      <button type="submit">SignUp</button>
                         <br><br>    
                      Do you have account? <a href="../pages/login.html">log in</a>   
                     </div>
@@ -75,6 +75,6 @@
             <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
             <script src="../script/firebase.js"></script>
             <script src="../script/app.js"></script>
-            <script src="../script/scripts.js"></script>
+            <!-- <script src="../script/scripts.js"></script> -->
 </body> 
 </html>  

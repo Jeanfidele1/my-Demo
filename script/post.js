@@ -65,8 +65,9 @@ function sendComment(){
         let comment = document.getElementById('Comment').value;
         let blogId = sessionStorage.getItem('blogId');
         
-        firebase.firestore().collection('comments').doc(blogId).set({
+        firebase.firestore().collection('comments').add({
             userId: currentUser.uid,
+            blogId: blogId,
             user: commenterName,
             comment: comment,
             date: date+'  '+time
@@ -83,3 +84,18 @@ setTimeout(()=>{
     disableComment();
 
 },4000)
+
+// function readComments(){
+//      let blogComment = [];
+//     blogId = sessionStorage.getItem('blogId')
+//     db.collection('comments').where('blogId','==',blogId).get().then(comments => {
+//        comments.forEach(comment => {
+//            db.collection('RegisteredUser').doc(comment.data().userId).get(user => {
+//                 blogComment.push({
+//                     commentId: comment.id,
+//                     comment: comment.data().comment
+//                 })
+//            })
+//        });
+//     })
+// }

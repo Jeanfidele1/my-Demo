@@ -40,8 +40,42 @@
                 </ul>
             </div> -->
         </div>
-       
-       
+        <div class="delete">
+            <button onClick= deleteBlog() id="remove">Delete blog</button>
+            <button>Edit blog</button>
+         </div>
+
+        <div class="comment">
+            <div class="head">
+                <ul>
+                    <li><img src="../asset/image/person.svg" alt="person"></li> 
+                </ul>
+            </div>
+            <h4 id="header">Musirikare says:</h4>
+            <small id="date">11/08/2020 at 3pm</small>
+            <br>
+            <p id="body">i like your content on this page. i wish everyone could follow the concept from this  page</p>
+            <div class="Reply">
+                <button>Delete comment</button>
+                <button>Reply</button>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="head">
+                <ul>
+                    <li><img src="../asset/image/person.svg" alt="person"></li> 
+                </ul>
+            </div>
+            <h4 id="header">Patrick says:</h4>
+            <small id="date">11/08/2020 at 3pm</small>
+            <br>
+            <p id="body">i like your content on this page. i wish everyone could follow the concept from this  page</p>
+        <div class="Reply">
+            <button>Delete comment</button>
+            <button>Reply</button>
+        </div>
+        </div>
+
     </div>  
 
   <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
@@ -54,5 +88,7 @@
   <!-- <script src="../script/blog.js"></script> -->
   <!-- <script src="../script/readblog.js"></script> -->
   <script src="../script/post.js"></script>
+  <script src="../script/delete blog.js"></script>
+  <!-- <script src="../script/editblog.js"></script> -->
 </body>
 </html>
