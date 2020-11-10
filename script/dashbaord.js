@@ -2,13 +2,12 @@ firebase.auth().onAuthStateChanged((user)=>{
     if(!user){
       return  window.location.href="../index.html";
     }
-    let userName = document.getElementById('user-name');
-    userName.innerHTML = user.displayName
+    // let userName = document.getElementById('user-name');
+    // userName.innerHTML = user.userName
     
     let mail = document.getElementById('mail');
     mail.innerHTML = user.email 
     
-   
 })
 
 function Logout(){
