@@ -85,17 +85,22 @@ setTimeout(()=>{
 
 },4000)
 
-// function readComments(){
-//      let blogComment = [];
-//     blogId = sessionStorage.getItem('blogId')
-//     db.collection('comments').where('blogId','==',blogId).get().then(comments => {
-//        comments.forEach(comment => {
-//            db.collection('RegisteredUser').doc(comment.data().userId).get(user => {
-//                 blogComment.push({
-//                     commentId: comment.id,
-//                     comment: comment.data().comment
-//                 })
-//            })
-//        });
-//     })
-// }
+
+async function readComments(){
+     let blogComment = [];
+    blogId = sessionStorage.getItem('blogId')
+    await db.collection('comments').where('blogId','==',blogId).get().then(comments => {
+       comments.forEach(comment => {
+           db.collection('RegisteredUser').doc(comment.data().userId).get(user => {
+                blogComment.push({
+                    commentId: comment.id,
+                    comment: comment.data().comment,
+                    username: user.data().username,
+                    date: comment.data().date
+                })
+           })
+       });
+    })
+    console.log(blogComment);
+}
+readComments();
