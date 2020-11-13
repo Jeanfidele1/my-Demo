@@ -83,7 +83,6 @@ setTimeout(()=>{
     disableComment();
 
 },4000)
-
 async function readComments(){
     const bodyContainer = document.getElementById('bodyContainer');
      let blogComment = [];
@@ -98,7 +97,6 @@ async function readComments(){
                     comment: comment.data().comment,
                     username: user.data().Username,
                     date: comment.data().date,
-
                 })
            })
        });
