@@ -7,6 +7,7 @@ db.collection('blogpost').get().then(function(doc){
         let subSubject = data.subject.substr(1, 130);
         datahtml+=`
         <div class="pics bloge_card"> 
+        <h4>${data.Title}</h4> 
         <img src="${imageURL}" alt="blog pic1"> <small> ${data.date} by ${data.author}</small>
         <p>${subSubject}... <br> <a href="#retrieve" onclick="retrieve('${id}')">Read more</a></p>
     </div>

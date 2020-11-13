@@ -1,4 +1,3 @@
-
 function displayPost(){
     let blogId = sessionStorage.getItem('blogId');
     db.collection('blogpost').doc(`${blogId}`).get().then((blog)=>{
@@ -18,7 +17,6 @@ function displayPost(){
          <div class="action">
        </div>
        <br>
-
        <div id="notLoggedInWrapper">
          <button>Login to comment</button>
        </div>
@@ -74,6 +72,7 @@ function sendComment(){
         }).then(()=>{
             comment.value = "";
             alert("Comment sent successfully");
+            window.location.reload();
         }).catch(error=>{
             alert(error)
         })
@@ -85,17 +84,49 @@ setTimeout(()=>{
 
 },4000)
 
-// function readComments(){
-//      let blogComment = [];
-//     blogId = sessionStorage.getItem('blogId')
-//     db.collection('comments').where('blogId','==',blogId).get().then(comments => {
-//        comments.forEach(comment => {
-//            db.collection('RegisteredUser').doc(comment.data().userId).get(user => {
-//                 blogComment.push({
-//                     commentId: comment.id,
-//                     comment: comment.data().comment
-//                 })
-//            })
-//        });
-//     })
-// }
+async function readComments(){
+    const bodyContainer = document.getElementById('bodyContainer');
+     let blogComment = [];
+    blogId = sessionStorage.getItem('blogId')
+    await db.collection('comments').where('blogId','==',blogId).get().then(comments => {
+       comments.forEach(comment => {
+           console.log("Got comment: "+comment.data().userId)
+           db.collection('RegisteredUser').doc(`${comment.data().userId}`).get().then(user => {
+               console.log("Commented user: "+comment.data().date);
+                blogComment.push({
+                    commentId: comment.id,
+                    comment: comment.data().comment,
+                    username: user.data().Username,
+                    date: comment.data().date,
+
+                })
+           })
+       });
+    })
+setTimeout(()=>{
+   blogComment.forEach(comment => {
+       bodyContainer.innerHTML+= `
+            <div class="comment">
+            <div class="head">
+                <ul>
+                    <li><img src="../asset/image/person.svg" alt="person"></li> 
+                </ul>
+            </div>
+            <h4 id="header">${comment.username}</h4>
+            <small id="date">${comment.date}</small>
+            <br> 
+            <p id="body">
+            ${comment.comment}
+            </p>
+            <div class="Reply">
+                <button>Delete comment</button>
+                <button>Reply</button>
+            </div>
+        </div>
+       `
+   })
+},4000)
+
+}
+
+readComments();
