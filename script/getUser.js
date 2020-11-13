@@ -13,7 +13,7 @@ function getUsers(){
                 <div class="dropdown">
                     <button class="dropbtn">Status</button>
                     <div class="dropdown-content">
-                      <a href="#">STANDARD User</a>
+                      <a onClick="changeRole(${user.id}, 'StandardUser')">STANDARD User</a>
                       <a href="#">Admin User</a>
                     </div>
                   </div>
@@ -29,7 +29,6 @@ function getUsers(){
 
 getUsers();
 
-// function changeRole(role){
-//     let currentUser = auth.currentUser;
-//     db.
+// function changeRole(userId, role){
+//    alert("userId "+userId+" role: "+role)
 // }

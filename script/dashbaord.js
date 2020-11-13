@@ -54,6 +54,7 @@ function getDropDown(value) {
               <td>${contact.data().email}</td>
               <td>${contact.data().message}</td>
               <td><img src="../asset/image/delete-icon.svg" alt=""></td>
+              <td>reply</td>
             </tr>
         `
       })
